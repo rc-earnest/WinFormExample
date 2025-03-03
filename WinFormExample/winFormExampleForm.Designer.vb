@@ -22,17 +22,41 @@ Partial Class winFormExampleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.ExitButton = New System.Windows.Forms.Button()
+        Me.UpdateButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'ExitButton
+        '
+        Me.ExitButton.Location = New System.Drawing.Point(731, 451)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(75, 23)
+        Me.ExitButton.TabIndex = 0
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
+        'UpdateButton
+        '
+        Me.UpdateButton.Location = New System.Drawing.Point(638, 451)
+        Me.UpdateButton.Name = "UpdateButton"
+        Me.UpdateButton.Size = New System.Drawing.Size(75, 23)
+        Me.UpdateButton.TabIndex = 1
+        Me.UpdateButton.Text = "Update"
+        Me.UpdateButton.UseVisualStyleBackColor = True
         '
         'winFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(818, 486)
+        Me.Controls.Add(Me.UpdateButton)
+        Me.Controls.Add(Me.ExitButton)
         Me.Name = "winFormExampleForm"
         Me.Text = "windowFormExample"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents ExitButton As Button
+    Friend WithEvents UpdateButton As Button
 End Class
