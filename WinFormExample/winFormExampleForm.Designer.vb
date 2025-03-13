@@ -39,6 +39,9 @@ Partial Class winFormExampleForm
         Me.ReverseCheckBox = New System.Windows.Forms.CheckBox()
         Me.WhiteSpaceCheckBox = New System.Windows.Forms.CheckBox()
         Me.RandomCheckBox = New System.Windows.Forms.CheckBox()
+        Me.DataListBox = New System.Windows.Forms.ListBox()
+        Me.RemoveButton = New System.Windows.Forms.Button()
+        Me.ComboBoxBox = New System.Windows.Forms.ComboBox()
         Me.CaseGroupBox.SuspendLayout()
         Me.FormatGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -213,11 +216,40 @@ Partial Class winFormExampleForm
         Me.RandomCheckBox.Text = "Random"
         Me.RandomCheckBox.UseVisualStyleBackColor = True
         '
+        'DataListBox
+        '
+        Me.DataListBox.FormattingEnabled = True
+        Me.DataListBox.ItemHeight = 16
+        Me.DataListBox.Location = New System.Drawing.Point(493, 149)
+        Me.DataListBox.Name = "DataListBox"
+        Me.DataListBox.Size = New System.Drawing.Size(285, 244)
+        Me.DataListBox.TabIndex = 14
+        '
+        'RemoveButton
+        '
+        Me.RemoveButton.Location = New System.Drawing.Point(493, 451)
+        Me.RemoveButton.Name = "RemoveButton"
+        Me.RemoveButton.Size = New System.Drawing.Size(75, 23)
+        Me.RemoveButton.TabIndex = 15
+        Me.RemoveButton.Text = "&Remove"
+        Me.RemoveButton.UseVisualStyleBackColor = True
+        '
+        'ComboBoxBox
+        '
+        Me.ComboBoxBox.FormattingEnabled = True
+        Me.ComboBoxBox.Location = New System.Drawing.Point(524, 109)
+        Me.ComboBoxBox.Name = "ComboBoxBox"
+        Me.ComboBoxBox.Size = New System.Drawing.Size(254, 24)
+        Me.ComboBoxBox.TabIndex = 16
+        '
         'winFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(818, 486)
+        Me.Controls.Add(Me.ComboBoxBox)
+        Me.Controls.Add(Me.RemoveButton)
+        Me.Controls.Add(Me.DataListBox)
         Me.Controls.Add(Me.RandomCheckBox)
         Me.Controls.Add(Me.WhiteSpaceCheckBox)
         Me.Controls.Add(Me.ReverseCheckBox)
@@ -259,4 +291,7 @@ Partial Class winFormExampleForm
     Friend WithEvents ReverseCheckBox As CheckBox
     Friend WithEvents WhiteSpaceCheckBox As CheckBox
     Friend WithEvents RandomCheckBox As CheckBox
+    Friend WithEvents DataListBox As ListBox
+    Friend WithEvents RemoveButton As Button
+    Friend WithEvents ComboBoxBox As ComboBox
 End Class
